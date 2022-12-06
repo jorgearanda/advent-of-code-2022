@@ -10,7 +10,7 @@ def load_comma_ints(filename):
 
 def load_strs(filename):
     with open(filename) as f:
-        return [line.strip() for line in f.readlines()]
+        return [line.rstrip() for line in f.readlines()]
 
 
 def load_int_chunks(filename):
